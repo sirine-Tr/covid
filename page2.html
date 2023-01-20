@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+<!--<![endif]-->
+
+<head>
+    <script src="page2.js"></script>
+    <meta charset="utf-8">
+
+    <title>Faites un don pour affronter le covid_19</title>
+
+    <link rel="stylesheet" href="page2.css">
+
+
+</head>
+
+<body>
+
+    <div class="zoom">
+        <div>
+            <div><img src="image3.jpg" /></div>
+        </div>
+
+        <form id=paiement>
+            <fieldset>
+                <legend>Votre identité</legend>
+
+                <ol>
+                    <li>
+                        <label for=nom>Nom</label>
+                        <input id="pseudo" name=pseudo type=text placeholder="Prénom et nom" required autofocus>
+                        <span id="aidePseudo"></span>
+                    </li>
+                    <li>
+                        <label for=email>Email</label>
+                        <input id=email name=email type=email placeholder="exemple@domaine.com" required>
+                        <span id="aideCourriel"></span>
+                    </li>
+                    <li>
+                        <label for=telephone>Téléphone</label>
+                        <input id=telephone name=telephone type=tel placeholder="par ex&nbsp;: +21654757195" required>
+                    </li>
+                    <li>
+                        <label for=pays>cin</label>
+                        <input id=pays name=pays type=text pattern="[0-9]{,7}" required>
+                    </li>
+                </ol>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>payement</legend>
+                <ol>
+                    <li>
+                        <fieldset>
+                            <legend>Type de carte bancaire</legend>
+                            <ol>
+                                <li>
+                                    <input id=visa name=type_de_carte type=radio>
+                                    <label for=visa>VISA</label>
+                                </li>
+                                <li>
+                                    <input id=amex name=type_de_carte type=radio>
+                                    <label for=amex>AmEx</label>
+                                </li>
+                                <li>
+                                    <input id=mastercard name=type_de_carte type=radio>
+                                    <label for=mastercard>Mastercard</label>
+                                </li>
+                            </ol>
+                        </fieldset>
+                    </li>
+                    <li>
+                        <label for=numero_de_carte>N de carte</label>
+                        <input id=numero_de_carte name=numero_de_carte type=number required>
+                    </li>
+                    <li>
+                        <label for=securite>Code sécurité</label>
+                        <input id=securite name=securite type=number required>
+                    </li>
+                    <li>
+                        <label for=nom_porteur>Nom du porteur</label>
+                        <input id=nom_porteur name=nom_porteur type=text placeholder="Même nom que sur la carte" required>
+                    </li>
+                    <li>
+                        <label for=somme>somme d'argent</label>
+                        <input id=somme type=text placeholder="la somme de donnation" pattern="[0-9]" required>
+                    </li>
+                </ol>
+            </fieldset>
+
+            <fieldset>
+                <button type="button" value="INSERT" class="form-controlsubmit" onclick="Insert()"> faire un don </button>
+
+            </fieldset>
+        </form>
+        <div id="div">
+            <table id="table"></table>
+            </table>
+        </div>
+        <div id="status" name="status"></div>
+
+
+</body>
+
+</html>

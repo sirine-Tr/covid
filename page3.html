@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html>
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="page3.css">
+    <title></title>
+
+    <link rel="stylesheet" href="page3.css">
+</head>
+
+<body>
+
+    <img src="image4.jpg">
+
+    <form id=sym>
+        <fieldset>
+            <legend>Votre identité</legend>
+
+            <ol>
+                <li>
+                    <label for=nom>Nom</label>
+                    <input id=nom name=nom type=text placeholder="Prénom et nom" required autofocus>
+                </li>
+                <li>
+                    <label for=email>Email</label>
+                    <input id=email name=email type=email placeholder="exemple@domaine.com" required>
+                </li>
+                <li>
+                    <label for=telephone>Téléphone</label>
+                    <input id=telephone name=telephone type=tel placeholder="par ex&nbsp;: +21654757195" required>
+                </li>
+            </ol>
+        </fieldset>
+
+        <fieldset>
+            <legend>votre Adresse détaillée</legend>
+            <ol>
+                <li>
+                    <label for=adresse>Adresse</label>
+                    <textarea id="adresse" name=adresse rows=5 required></textarea>
+                </li>
+
+                <li>
+                    <label for=pays>gouverat</label>
+                    <input id=region name=région type=région required>
+                </li>
+                <li>
+                    <label for=codepostal>Code postal</label>
+                    <input id=codepostal name=codepostal type=text pattern="[0-9]{,4}" required>
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>les symptomes</legend>
+            <ol>
+                <li>
+                    <fieldset>
+                        <legend>symptome</legend>
+                        <ol>
+                            <li>
+                                degre de votre température
+                                <input type="number" id="temp" name="quantity" min="36" max="45" placeholder="37.0" required>
+                            </li>
+                            <li>
+                                Ces derniers jours, avez-vous une toux ou une augmentation de votre toux habituelle ?
+                                <input type="radio" name="fièvre" value="oui" id="oui" checked="checked" /> <label for="oui">Oui</label>
+                                <input type="radio" name="fièvre)" value="non" id="non" /> <label for="non">Non</label>
+                            </li>
+                            <li>
+                                Ces derniers jours, avez-vous noté une forte diminution ou perte de votre goût ou de votre odorat ?
+                                <input type="radio" name="toux" value="oui" id="oui" checked="checked" /> <label for="oui">Oui</label>
+                                <input type="radio" name="toux" value="non" id="non" /> <label for="non">Non</label>
+                            </li>
+
+                            <li>
+                                Ces derniers jours, avez-vous eu un mal de gorge et/ou des douleurs musculaires et/ou des courbatures inhabituelles ?
+                                <input type="radio" name="frites" value="oui" id="oui" checked="checked" /> <label for="oui">Oui</label>
+                                <input type="radio" name="frites" value="non" id="non" /> <label for="non">Non</label>
+                            </li>
+                            <li>
+                                Ces dernières 24 heures, avez-vous de la diarrhée ? Avec au moins 3 selles molles.
+                                <input type="radio" name="a" value="oui" id="oui" checked="checked" /> <label for="oui">Oui</label>
+                                <input type="radio" name="a" value="non" id="non" /> <label for="non">Non</label>
+                            </li>
+                            <li>
+                                Ces derniers jours, avez-vous une fatigue inhabituelle ?
+                                <input type="radio" name="b" value="oui" id="oui" checked="checked" /> <label for="oui">Oui</label>
+                                <input type="radio" name="b" value="non" id="non" /> <label for="non">Non</label>
+                            </li>
+                            <li>Depuis 24 heures ou plus, êtes-vous dans l'impossibilité de vous alimenter ou de boire ?
+                                <input type="radio" name="c" value="oui" id="oui" checked="checked" /> <label for="oui">Oui</label>
+                                <input type="radio" name="c" value="non" id="non" /> <label for="non">Non</label>
+                            </li>
+                            <li>Ces dernières 24 heures, avez-vous noté un manque de souffle inhabituel lorsque vous parlez ou faites un petit effort ?
+                                <input type="radio" name="d" value="oui" id="oui" checked="checked" /> <label for="oui">Oui</label>
+                                <input type="radio" name="d" value="non" id="non" /> <label for="non">Non</label>
+                            </li>
+                            <li>
+                                <table>
+                                    <tr> total:
+                                        <td> <input type="number" id="oui" name="oui" placeholder="oui" max="7" required></td>
+                                        <td> <input type="number" id="non" name="non" placeholder="non" max="7" required></td>
+                                    </tr>
+                                </table>
+                            </li>
+                        </ol>
+                    </fieldset>
+                </li>
+
+
+        </fieldset>
+
+        <fieldset>
+            <button type=button value="INSERT" class="form-controlsubmit" onclick="Insert()">envoyer!</button>
+        </fieldset>
+    </form>
+    <div classe="i">
+        <table>
+            <div classe="i">
+                <tr>
+                    <td><i class="fas fa-house-user" style="font-size:60px;color: #68117e;">  </i></td>
+
+                    <td>
+                        <p>Restez chez vous, évitez tout contact avec les autres. Certaines personnes transmettent le virus sans en ressentir les symptômes.</p>
+                    </td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td> <i class="fas fa-hand-sparkles" style="font-size:60px;color:  #68117e;"></i></td>
+                    <td>
+                        <p>Lavez-vous très régulièrement les mains</p>
+                    </td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td>
+                        <i class="fas fa-head-side-cough-slash" style="font-size:60px;color:   #68117e;"></i>
+                    </td>
+                    <td>
+                        <p>Toussez ou éternuez dans votre coude ou dans un mouchoir</p>
+                    </td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td>
+                        <i class="fas fa-handshake-slash" style="font-size:60px;color:  #68117e;"></i>
+                    </td>
+                    <td>
+                        <p>Saluez sans serrer la main, n'embrassez personne</p>
+                    </td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td>
+                        <i class="fas fa-head-side-mask" style="font-size:60px;color:   #68117e;"></i>
+                    </td>
+                    <td>
+                        <p>porter le masque avant de sortir</p>
+                    </td>
+                </tr>
+            </div>
+        </table>
+    </div>
+    <div id="div">
+        <table id="table"></table>
+        </table>
+    </div>
+    <div id="status" name="status"></div>
+    <script>
+        var db = window.openDatabase('test1', '1.0', 'Test DB', 2 * 1024 * 1024, verif());
+
+        function verif() {
+            alert("base de donnee cree");
+        }
+
+        function Insert() {
+            var id = document.getElementById("nom");
+            var name = document.getElementById("email");
+            var email = document.getElementById("telephone");
+            var a = document.getElementById("adresse");
+            var b = document.getElementById("temp");
+            var c = document.getElementById("oui");
+            var d = document.getElementById("non");
+
+
+            db.transaction(function(tx) {
+                tx.executeSql('CREATE TABLE IF NOT EXISTS CONTACT (id unique, name, email)');
+                tx.executeSql('INSERT INTO CONTACT (id, name, email,a,b,c,d) VALUES (' + id.value + '," ' + name.value + ' ", " ' + email.value + a.value + '," ' + b.value + ' ", " ' + c.value + ' "," ' + d.value + ' ")');
+            });
+        }
+
+        function View() {
+            div = document.getElementById("div");
+            div.innerHTML = "";
+            div.innerHTML = "<table id='table'>";
+            var table = document.getElementById("table");
+            db.transaction(function(tx) {
+                tx.executeSql('SELECT * FROM CONTACT', [], function(tx, results) {
+                    console.log(results.rows.item(0).id);
+                    for (i = 0; i < results.rows.length; i++) {
+                        r = table.insertRow(i);
+                        var n1 = table.rows[i].insertCell(0);
+                        var n2 = table.rows[i].insertCell(1);
+                        var n3 = table.rows[i].insertCell(2);
+                        var n4 = table.rows[i].insertCell(3);
+                        n1.innerHTML = "<p><b>" + results.rows.item(i).id + "</b></p>";
+                        n2.innerHTML = "<p><b>" + results.rows.item(i).name + "</b></p>";
+                        n3.innerHTML = "<p><b>" + results.rows.item(i).email + "</b></p>";
+                        n4.innerHTML = "<input type='button' value='delete' onclick='Drop(" + results.rows.item(i).id + ");'>"
+                    }
+                }, null);
+            });
+        }
+
+        function Delete() {
+            db.transaction(function(tx) {
+                tx.executeSql('DROP TABLE CONTACT');
+            });
+        }
+
+        function Drop(x) {
+            db.transaction(function(tx) {
+                tx.executeSql('DELETE FROM CONTACT WHERE id=?', [x]);
+            });
+        }
+    </script>
+
+</body>

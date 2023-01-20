@@ -1,0 +1,137 @@
+    html,
+    body,
+    h1,
+    form,
+    fieldset,
+    legend,
+    ol,
+    li {
+        margin: 0;
+        padding: 0;
+    }
+    
+    form {
+        padding-right: 50%;
+    }
+    
+    img {
+        float: right;
+        height: 1200px;
+        width: 800px;
+    }
+    
+    form#sym {
+        background: rgb(241, 62, 62);
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        padding: 20px;
+        width: 400px;
+    }
+    
+    form#sym fieldset {
+        border: none;
+        margin-bottom: 10px;
+    }
+    
+    form#sym fieldset:last-of-type {
+        margin-bottom: 0;
+    }
+    
+    form#sym legend {
+        color: #2e0d0f;
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: 10px;
+        text-shadow: 0 1px 1px rgb(241, 62, 62);
+    }
+    
+    form#sym>fieldset>legend:before {
+        content: "Étape " counter(fieldsets) " : ";
+        counter-increment: fieldsets;
+    }
+    
+    form#sym fieldset fieldset legend {
+        color: #111111;
+        font-size: 13px;
+        font-weight: normal;
+        padding-bottom: 0;
+    }
+    
+    form#sym ol li {
+        background: #b9cf6a;
+        background: rgba(255, 255, 255, .3);
+        border-color: #e3ebc3;
+        border-color: rgba(255, 255, 255, .6);
+        border-style: solid;
+        border-width: 2px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        line-height: 30px;
+        list-style: none;
+        padding: 5px 10px;
+        margin-bottom: 2px;
+    }
+    
+    form#sym>fieldset>legend:before {
+        content: "Étape " counter(fieldsets) " : ";
+        counter-increment: fieldsets;
+    }
+    
+    form#sym fieldset fieldset legend {
+        color: #111111;
+        font-size: 13px;
+        font-weight: normal;
+        padding-bottom: 0;
+    }
+    
+    form#sym button {
+        background: red;
+        border: none;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -khtml-border-radius: 20px;
+        border-radius: 20px;
+        color: #ffffff;
+        display: block;
+        font: 18px Georgia, "Times New Roman", Times, serif;
+        letter-spacing: 1px;
+        margin: auto;
+        padding: 7px 25px;
+        text-shadow: 0 1px 1px #000000;
+        text-transform: uppercase;
+    }
+    
+    form#paiement button:hover {
+        background: rgb(61, 2, 2);
+        cursor: pointer;
+    }
+    
+    form#sym ol li {
+        background: #b9cf6a;
+        background: rgba(255, 255, 255, .3);
+        border-color: #e3ebc3;
+        border-color: rgba(255, 255, 255, .6);
+        border-style: solid;
+        border-width: 2px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        line-height: 30px;
+        list-style: none;
+        padding: 5px 10px;
+        margin-bottom: 2px;
+    }
+    
+    .i {
+        color: #490768;
+        text-shadow: 2px 2px 4px #fd076d;
+        font-size: 30px;
+        position: absolute;
+        left: 50%;
+    }
+    
+    p {
+        font-size: 25px;
+    }
